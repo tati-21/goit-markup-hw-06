@@ -1,63 +1,9 @@
-/*  #region body */
-
-body {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  color: #434455;
-  background-color: white;
-}
-
-h1,
-h2,
-h3,
-h4,
-p {
-  margin: 0;
-}
-
-img {
-  display: block;
-}
-
-a {
-  color: currentColor;
-  text-decoration: none;
-}
-
-ul,
-ol {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-/* for all "p" text */
-.text {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-/* #endregion*/
+@import url("./base.css");
+@import url("./container.css");
+@import url("./section.css");
+@import url("./hero.css");
+@import url("./benefits.css");
+@import url("./our-team.css");
 
 /* #region Header section */
 
@@ -159,155 +105,7 @@ ol {
 }
 /* #endregion*/
 
-/* #region Hero Section */
-
-.hero-section {
-  background-image:
-    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/hero-bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  background-color: #2e2f42;
-  padding: 188px 0;
-  /* max-width: 1440px; */
-}
-
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.main-title {
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: white;
-  max-width: 496px;
-  margin: 0 0 48px;
-}
-
-.hero-button {
-  background-color: #4d5ae5;
-  color: white;
-  cursor: pointer;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  display: block;
-  min-width: 169px;
-  height: 56px;
-  border: none;
-  border-radius: 4px;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero-button:hover,
-.hero-button:focus {
-  background-color: #404bbf;
-}
-
-/* #endregion*/
-
-/* #region Benefits section */
-
-.benefits-section {
-  padding: 120px 0;
-}
-
-.benefits-list {
-  display: flex;
-  gap: 24px;
-}
-
-.benefits-item {
-  width: calc((100% - 72px) / 4);
-}
-
-.benefits-icon-wraper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 112px;
-  margin-bottom: 8px;
-
-  background-color: #f4f4fd;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-}
-
-.benefits-title {
-  margin-bottom: 8px;
-}
-
-.section-title {
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-align: center;
-}
-
-.card-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin: 0 auto;
-}
-/* #endregion*/
-
 /* #region Our Team section */
-
-.team-section {
-  background-color: #f4f4fd;
-  padding: 120px 0;
-}
-
-.team-section .section-title {
-  line-height: 1.11;
-  text-transform: capitalize;
-  color: #2e2f42;
-}
-
-.team-card {
-  background-color: white;
-  width: calc((100% - 72px) / 4);
-  border-radius: 0px 0px 4px 4px;
-
-  box-shadow:
-    0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-.team-title {
-  margin-bottom: 72px;
-}
-
-.team-list {
-  display: flex;
-  gap: 24px;
-}
-
-.team-card-content {
-  padding: 32px 0;
-}
-
-.team-name {
-  text-align: center;
-  margin-bottom: 8px;
-}
-
-.team-text {
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 8px;
-}
 
 .social {
   display: flex;
@@ -577,7 +375,8 @@ ol {
   visibility: hidden;
   pointer-events: none;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -625,7 +424,8 @@ ol {
   border-radius: 50%;
   cursor: pointer;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -835,3 +635,7 @@ ol {
 /* #endregion */
 
 /* #endregion */
+
+.none {
+  display: none;
+}
