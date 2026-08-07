@@ -1,11 +1,10 @@
+/* #region base.css*/
+
 html {
   scroll-behavior: smooth;
 }
 
-/* Частина людей вимикає анімації в налаштуваннях системи: рух на екрані
-   може викликати запаморочення й нудоту при вестибулярних розладах.
-   Браузер повідомляє про це через prefers-reduced-motion, і тоді
-   прокрутка стає миттєвою — перехід по якорю все одно спрацює. */
+/* Якщо вимикнена анімація у користувача в налаштуваннях системи: */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -66,6 +65,9 @@ a {
   overflow: hidden;
 }
 
+/* #endregion */
+
+/* #region container.css */
 .container {
   max-width: 320px;
   margin: 0 auto;
@@ -80,7 +82,9 @@ a {
     padding: 0 15px;
   }
 }
+/* #endregion */
 
+/* #region section.css */
 .section {
   padding: 96px 0;
 
@@ -98,7 +102,9 @@ a {
   text-align: center;
   color: #2e2f42;
 }
+/* #endregion */
 
+/* #region card.css */
 .card-title {
   font-weight: 700;
   font-size: 36px;
@@ -123,7 +129,9 @@ a {
     font-weight: 400;
   }
 }
+/* #endregion */
 
+/* #region logo.css */
 .logo {
   display: block;
   font-family: "Raleway", sans-serif;
@@ -164,7 +172,9 @@ line-height: 1.17; */
 .footer .logo-studio {
   color: #f4f4fd;
 }
+/* #endregion */
 
+/* #region navigation.css */
 .nav-menu {
   @media screen and (max-width: 767px) {
     margin-bottom: auto;
@@ -298,6 +308,9 @@ line-height: 1.17; */
   color: #404bbf;
 } */
 
+/* #endregion */
+
+/* #region container.css */
 .social {
   display: flex;
   flex-wrap: wrap; /* + */
@@ -353,3 +366,4 @@ line-height: 1.17; */
     display: none;
   }
 }
+/* #endregion */

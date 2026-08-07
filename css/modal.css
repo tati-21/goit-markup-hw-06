@@ -1,3 +1,7 @@
+/* #region Modal window*/
+
+/* #region Modal window: Backdrop + Close BTN */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -271,5 +275,7 @@
 .modal-form-btn:focus {
   background-color: #404bbf;
 }
+
+/* #endregion */
 
 /* #endregion */
