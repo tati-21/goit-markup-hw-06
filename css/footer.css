@@ -3,8 +3,9 @@
   background-color: #2e2f42;
   padding: 96px 0;
 
-  /* Desktop
-  padding: 100px 0; */
+  @media screen and (min-width: 1158px) {
+    padding: 100px 0;
+  }
 }
 
 .footer-container {
@@ -31,13 +32,16 @@
   @media screen and (min-width: 768px) {
     width: 264px;
   }
-  /* Desktop
-  margin-right: 120px; */
+
+  @media screen and (min-width: 1158px) {
+    margin-right: 120px;
+  }
 }
 
 .footer-social-wraper {
-  /* Desktop
-  margin-right: auto; */
+  @media screen and (min-width: 1158px) {
+    margin-right: auto;
+  }
 }
 
 .footer-text {
