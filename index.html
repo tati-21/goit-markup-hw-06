@@ -20,34 +20,107 @@
   </head>
 
   <body>
-    <header class="none page-header">
+    <header class="header">
       <div class="container header-container">
-        <nav class="header-nav">
-          <a class="logo header-logo" href="./index.html">
-            Web<span class="logo-studio">Studio</span>
-          </a>
+        <a class="logo" href="./index.html">
+          Web<span class="logo-studio">Studio</span>
+        </a>
 
-          <ul class="nav-menu">
-            <li><a class="nav-link active" href="./index.html">Studio</a></li>
-            <li><a class="nav-link" href="">Portfolio</a></li>
-            <li><a class="nav-link" href="">Contacts</a></li>
-          </ul>
-        </nav>
+        <button type="button" class="burger-btn">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
 
-        <address class="address">
-          <ul class="address-list">
-            <li>
-              <a class="address-link" href="mailto:info@devstudio.com">
-                info@devstudio.com
+        <div class="mobile-menu">
+          <button class="mobile-menu-close-btn" type="button">
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <nav class="nav-menu">
+            <ul class="navigation">
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html">Studio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="">Portfolio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <address class="contacts">
+            <ul class="contacts-list">
+              <li class="contacts-list-item">
+                <a class="contacts-list-link" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="contacts-list-item">
+                <a class="contacts-list-link" href="tel:+110001111111">
+                  +11 (000) 111-11-11
+                </a>
+              </li>
+            </ul>
+          </address>
+
+          <ul class="social">
+            <li class="social-item">
+              <a
+                class="social-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
               </a>
             </li>
-            <li>
-              <a class="address-link" href="tel:+110001111111">
-                +11 (000) 111-11-11
+            <li class="social-item">
+              <a
+                class="social-link"
+                href="https://x.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                class="social-link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                class="social-link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
               </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </header>
 
@@ -541,10 +614,10 @@
       </section>
     </main>
 
-    <footer class="none footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-wraper">
-          <a class="logo footer-logo" href="./index.html">
+          <a class="logo" href="./index.html">
             Web<span class="logo-studio">Studio</span>
           </a>
 
