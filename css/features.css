@@ -1,4 +1,4 @@
-.benefits-list {
+.features-list {
   display: flex;
   flex-direction: column;
   gap: 72px;
@@ -10,7 +10,7 @@
   }
 }
 
-.benefits-item {
+.features-item {
   @media screen and (min-width: 768px) {
     width: calc((100% - 24px) / 2);
   }
@@ -20,7 +20,7 @@
   }
 }
 
-.benefits-icon-wraper {
+.features-icon-wraper {
   display: none;
 
   @media screen and (min-width: 1158px) {

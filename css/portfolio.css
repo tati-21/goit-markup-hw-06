@@ -1,0 +1,141 @@
+.portfolio-section .section-title {
+  text-transform: capitalize;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    gap: 48px 24px;
+  }
+}
+
+.portfolio-card {
+  /* cursor: pointer; */
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 24px) / 2);
+  }
+
+  @media screen and (min-width: 1158px) {
+    width: calc((100% - 48px) / 3);
+  }
+}
+
+.portfolio-link {
+  display: block;
+
+  /* Transition - Плавність переходу
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+
+  /* або в одну строку: */
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow:
+      0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16),
+      0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  }
+}
+
+.portfolio-link:hover .portfolio-overlay-text,
+.portfolio-link:focus .portfolio-overlay-text {
+  transform: translateY(0);
+}
+
+/* Контур браузера прибираємо тому, що індикатор фокуса вже є:
+   тінь і оверлей з'являються і при :focus теж */
+.portfolio-link:focus-visible {
+  outline: none;
+}
+
+/* Альтернативний варіант - тримати стани на самій картці, а не на посиланні
+
+   :focus-within — це псевдоклас, який вмикається на БАТЬКІВСЬКОМУ елементі,
+   коли фокус потрапив на будь-якого його нащадка. Тут він був потрібен тому,
+   що <li class="portfolio-card"> сам фокус не приймає — його приймає вкладене
+   <a class="portfolio-link">, тож .portfolio-card:focus не спрацював би ніколи.
+
+   Результат для користувача той самий, різниця лише в тому, на якому елементі
+   висять селектори:
+
+.portfolio-card:hover,
+.portfolio-card:focus-within {
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-card:hover .portfolio-overlay-text,
+.portfolio-card:focus-within .portfolio-overlay-text {
+  transform: translateY(0);
+}
+*/
+
+.portfolio-img-wraper {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-card-content {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.portfolio-section .card-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.portfolio-section .card-text {
+  font-weight: 400;
+}
+
+.portfolio-overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  margin: 0;
+
+  transform: translateY(100%);
+
+  /* Transition - Плавність переходу
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+
+  /* або в одну строку: */
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
