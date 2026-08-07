@@ -1,0 +1,20 @@
+@import url("./common.css");
+
+@import url("./header.css");
+@import url("./hero.css");
+@import url("./features.css");
+@import url("./team.css");
+@import url("./portfolio.css");
+@import url("./mobile-menu.css");
+@import url("./footer.css");
+@import url("./modal.css");
+
+/* #region Modal window*/
+
+/* #region Modal window: Backdrop + Close BTN */
+
+/* #endregion */
+
+.none {
+  display: none;
+}
