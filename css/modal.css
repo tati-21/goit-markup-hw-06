@@ -30,12 +30,14 @@
   top: 50%;
   left: 50%;
 
-  width: 408px;
-  min-height: 584px;
-  padding: 72px 24px 24px;
+  width: 90%;
+  /* Desktop
+  width: 408px; 
+  padding: 72px 24px 24px;*/
+
+  padding: 72px 15px 24px;
 
   transform: translate(-50%, -50%);
-
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   box-shadow:
@@ -44,6 +46,10 @@
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
   border-radius: 4px;
+
+  @media screen and (max-width: 767px) {
+    padding: 10px 15px;
+  }
 }
 
 .modal-close-btn,
@@ -51,6 +57,7 @@
   position: absolute;
   top: 24px;
   right: 24px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,12 +99,8 @@
 /* #region Modal window: Page title + Input */
 
 .modal-title {
-  margin-top: 0;
   margin-bottom: 16px;
 
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
 }

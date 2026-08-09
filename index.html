@@ -200,6 +200,10 @@
             <li class="team-card">
               <img
                 src="./images/team/mark-guerrero.jpg"
+                srcset="
+                  ./images/team/mark-guerrero.jpg    1x,
+                  ./images/team/mark-guerrero@2x.jpg 2x
+                "
                 alt="A dark-haired middle-aged man with a beard"
                 width="264"
                 height="260"
@@ -265,6 +269,10 @@
             <li class="team-card">
               <img
                 src="./images/team/tom-ford.jpg"
+                srcset="
+                  ./images/team/tom-ford.jpg    1x,
+                  ./images/team/tom-ford@2x.jpg 2x
+                "
                 alt="A broadly smiling guy"
                 width="264"
                 height="260"
@@ -329,6 +337,10 @@
             <li class="team-card">
               <img
                 src="./images/team/camila-garcia.jpg"
+                srcset="
+                  ./images/team/camila-garcia.jpg    1x,
+                  ./images/team/camila-garcia@2x.jpg 2x
+                "
                 alt="A nice woman with tan skin and long dark hair"
                 width="264"
                 height="260"
@@ -393,6 +405,10 @@
             <li class="team-card">
               <img
                 src="./images/team/daniel-wilson.jpg"
+                srcset="
+                  ./images/team/daniel-wilson.jpg    1x,
+                  ./images/team/daniel-wilson@2x.jpg 2x
+                "
                 alt="A broadly smiling European man with medium-length dark hair and a light beard"
                 width="264"
                 height="260"
@@ -469,6 +485,10 @@
                 <div class="portfolio-img-wraper">
                   <img
                     src="./images/portfolio/banking-app.jpg"
+                    srcset="
+                      ./images/portfolio/banking-app.jpg    1x,
+                      ./images/portfolio/banking-app@2x.jpg 2x
+                    "
                     alt="A sample app screen layout: one large screen and six smaller ones, all in purple tones"
                     width="360"
                     height="300"
@@ -495,6 +515,10 @@
                 <div class="portfolio-img-wraper">
                   <img
                     src="./images/portfolio/cashless-payment.jpg"
+                    srcset="
+                      ./images/portfolio/cashless-payment.jpg    1x,
+                      ./images/portfolio/cashless-payment@2x.jpg 2x
+                    "
                     alt="A smartphone making a contactless payment at a terminal"
                     width="360"
                     height="300"
@@ -521,6 +545,10 @@
                 <div class="portfolio-img-wraper">
                   <img
                     src="./images/portfolio/meditation-app.jpg"
+                    srcset="
+                      ./images/portfolio/meditation-app.jpg    1x,
+                      ./images/portfolio/meditation-app@2x.jpg 2x
+                    "
                     alt="A smartphone with a short headline in the foreground and a laptop in the background, both in red tones"
                     width="360"
                     height="300"
@@ -547,6 +575,10 @@
                 <div class="portfolio-img-wraper">
                   <img
                     src="./images/portfolio/taxi-service.jpg"
+                    srcset="
+                      ./images/portfolio/taxi-service.jpg    1x,
+                      ./images/portfolio/taxi-service@2x.jpg 2x
+                    "
                     alt="A gloved hand on the steering wheel with a navigation app mounted on the windshield"
                     width="360"
                     height="300"
@@ -573,6 +605,10 @@
                 <div class="portfolio-img-wraper">
                   <img
                     src="./images/portfolio/screen-illustrations.jpg"
+                    srcset="
+                      ./images/portfolio/screen-illustrations.jpg    1x,
+                      ./images/portfolio/screen-illustrations@2x.jpg 2x
+                    "
                     alt="A smartphone home screen with a moon wallpaper on the left and four similar wallpaper variations on the right"
                     width="360"
                     height="300"
@@ -599,6 +635,10 @@
                 <div class="portfolio-img-wraper">
                   <img
                     src="./images/portfolio/online-courses.jpg"
+                    srcset="
+                      ./images/portfolio/online-courses.jpg    1x,
+                      ./images/portfolio/online-courses@2x.jpg 2x
+                    "
                     alt="A smiling woman wearing headphones outdoors, looking at her smartphone"
                     width="360"
                     height="300"
@@ -714,7 +754,7 @@
       </div>
     </footer>
 
-    <div id="backdrop" class="none backdrop">
+    <div id="backdrop" class="backdrop is-open">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg class="modal-close-icon" width="8" height="8">
@@ -795,9 +835,11 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="policy-link">Privacy Policy</a></label
-            >
+              <span>
+                I accept the terms and conditions of the
+                <a href="" class="policy-link">Privacy Policy</a>
+              </span>
+            </label>
           </div>
           <button class="modal-form-btn" type="submit">Send</button>
         </form>
