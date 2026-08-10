@@ -32,7 +32,7 @@
   left: 50%;
 
   width: calc(100% - 32px);
-  max-width: 408px;
+  max-width: 288px;
   padding: 72px 16px 24px;
 
   transform: translate(-50%, -50%);
@@ -48,52 +48,13 @@
 
 @media screen and (min-width: 768px) {
   .modal {
+    max-width: 408px;
     padding: 72px 24px 24px;
   }
 }
 
-.modal-close-btn,
-.mobile-menu-close-btn {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
-  padding: 0;
-
-  border: 1px solid rgba(0, 0, 0, 0.1);
-
-  background-color: #e7e9fc;
-  border-radius: 50%;
-  cursor: pointer;
-
-  transition:
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-close-btn:hover,
-.modal-close-btn:focus,
-.mobile-menu-close-btn:hover,
-.mobile-menu-close-btn:focus {
-  background-color: #404bbf;
-  border: none;
-}
-
-.modal-close-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-close-btn:hover .modal-close-icon,
-.modal-close-btn:focus .modal-close-icon,
-.mobile-menu-close-btn:hover .mobile-menu-close-icon,
-.mobile-menu-close-btn:focus .mobile-menu-close-icon {
-  fill: #fff;
-}
+/* Стилі кнопки закриття спільні для модалки й мобільного меню,
+   тому лежать у common.css */
 /* #endregion */
 
 /* #region Modal window: Page title + Input */

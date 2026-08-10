@@ -20,3 +20,27 @@
     margin-left: auto;
   }
 }
+
+/* Бургер-кнопка живе в рядку хедера, тому її стилі тут, а не в mobile-menu.css */
+.burger-btn {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  /* :hover тут не має сенсу — кнопка існує тільки до 768px,
+     тобто на тач-екранах, де наведення миші не існує.
+  &:hover,
+  &:focus {
+    fill: #404bbf;
+  } */
+}
+
+@media screen and (min-width: 768px) {
+  .burger-btn {
+    display: none;
+  }
+}

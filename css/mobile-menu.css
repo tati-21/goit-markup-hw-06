@@ -1,36 +1,12 @@
-.burger-btn {
-  width: 24px;
-  height: 24px;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-
-  /* :hover тут не має сенсу — кнопка існує тільки до 768px,
-     тобто на тач-екранах, де наведення миші не існує.
-  &:hover,
-  &:focus {
-    fill: #404bbf;
-  } */
-}
-
-@media screen and (min-width: 768px) {
-  .burger-btn {
-    display: none;
-  }
-}
-
+/* Зовнішній блок — оверлей: накриває весь екран і відповідає за показ/приховування */
 .mobile-menu {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 998;
 
-  display: flex;
-  flex-direction: column;
   width: 100%;
   height: 100%;
-  padding: 72px 16px 40px;
 
   opacity: 0;
   visibility: hidden;
@@ -50,6 +26,20 @@
   visibility: visible;
   pointer-events: auto;
   transform: translateX(0);
+}
+
+/* Внутрішній блок — контейнер вмісту: обмежує ширину, тримає відступи
+   й повну висоту, від нього ж відлічується кнопка закриття */
+.mobile-menu-container {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 320px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 72px 16px 40px;
 }
 
 /* З планшета меню не бере участі в розмітці зовсім —
