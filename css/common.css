@@ -24,6 +24,11 @@ body {
   background-color: #fff;
 }
 
+body:has(.mobile-menu.is-open),
+body:has(.backdrop.is-open) {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -191,9 +196,6 @@ line-height: 1.17; */
   }
 }
 
-.nav-item {
-}
-
 .nav-link {
   display: block;
 
@@ -354,8 +356,6 @@ line-height: 1.17; */
 
 .footer .social {
   gap: 16px;
-  /* Desktop
-  justify-content: flex-start; */
 }
 
 .mobile-menu .social {

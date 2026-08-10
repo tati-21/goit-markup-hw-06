@@ -28,7 +28,7 @@
   }
 }
 
-.footer-logo-wraper {
+.footer-logo-wrapper {
   @media screen and (min-width: 768px) {
     width: 264px;
   }
@@ -38,7 +38,7 @@
   }
 }
 
-.footer-social-wraper {
+.footer-social-wrapper {
   @media screen and (min-width: 1158px) {
     margin-right: auto;
   }
@@ -48,17 +48,12 @@
   font-weight: 400;
   color: inherit;
 
-  /* margin: 0; */
   /* desktop zmienic font weight */
 }
 
 .footer-social-title,
 .footer-form-title {
   margin-bottom: 16px;
-
-  /* font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em; */
   color: #fff;
 
   @media screen and (max-width: 767px) {
